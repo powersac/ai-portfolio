@@ -161,6 +161,15 @@ details.sec[open]>summary .names{visibility:hidden;height:0;margin:0}
 details.sec[open]>summary{border-bottom:1px solid var(--line)}
 details.sec>.list{margin:0 18px 8px;border-top:0}
 details.sec>.list details.row:last-child{border-bottom:0}
+</style><style>
+/* one grid: every box spans the full column, same padding, two-column inner grids */
+.about{max-width:none;padding:24px}
+.pat{padding:24px}
+.pat .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:640px){.pat .pgrid{grid-template-columns:1fr}}
+details.row>summary{grid-template-columns:24px 310px 1fr auto}
+details.row .in-card{padding:16px 0 4px}
+@media (max-width:760px){details.row>summary{grid-template-columns:20px 1fr auto}}
 </style>
 </head>
 <body>
@@ -173,7 +182,7 @@ details.sec>.list details.row:last-child{border-bottom:0}
   </div>
   <section class="pat" id="method" style="margin-top:22px"><h3>How I run AI work</h3><div class="pgrid"><div><b>1. Start with the business goal.</b><span>What needs to move (revenue, cost, speed, or risk) and who owns that number.</span></div><div><b>2. Define the problem and the finish line.</b><span>The specific problem, who lives with it, where the number stands today, and the measure that says it&#x27;s solved, agreed before any tool is chosen.</span></div><div><b>3. Build the smallest version that proves it.</b><span>I do the hands-on build myself. I decide up front which calls stay with a person (what gets sent, what gets approved, what counts as an exception) and build that approval into the tool.</span></div><div><b>4. Measure it, then make it routine.</b><span>Check it against the measure from step 2 and what it costs to run. If it holds, a named owner on the team runs it and it becomes part of how they operate, not a side project. If it doesn&#x27;t, stop it.</span></div></div></section>
   <p class="lead">The examples below came out of that process, grouped by the kind of work. Everything is folded so you can scan the list, then open whatever is relevant. Each one opens with the business problem, then how AI is used, then the result. Click any image to see it full screen.</p>
-  <p class="lead" style="margin-top:0;font-size:16px;color:var(--muted)">Each example lives in its own GitHub repository, linked inside it. Fantasy Football, Groceries and Chores are public. The rest are private and open only for people I&#x27;ve added. The songbook is a live app anyone can open. I&#x27;m glad to walk anyone through any of them.</p>
+  <p class="lead" style="margin-top:0;font-size:16px;color:var(--muted)">Each example lives in its own GitHub repository, linked inside it.</p>
   <div class="toolbar"><button type="button" data-all="open">Open all</button><button type="button" data-all="close">Close all</button></div>
   <div class="tier" id="business" style="margin-top:44px">Business</div><p class="sec-desc">Client engagements and company operating systems.</p>
   <div class="list"><details class="row" id="ngo"><summary><span class="arrow" aria-hidden="true">&#9656;</span><span class="t">NGO Operations</span><span class="h">A client's back office: onboarding, invoices, timesheets, grants</span><span class="tag">Client</span></summary>
@@ -295,7 +304,7 @@ details.sec>.list details.row:last-child{border-bottom:0}
 </section></div>
 </details></div>
   <div class="tier" id="apps" style="margin-top:44px">Personal mobile apps</div><p class="sec-desc">Installable phone apps with no app store and no accounts. Two are shared: everyone in the family sees the same list or chart, and each person only gets the controls meant for them.</p>
-  <div class="list"><details class="row" id="grocery"><summary><span class="arrow" aria-hidden="true">&#9656;</span><span class="t">Household: Groceries</span><span class="h">One shared list. A tick on one phone shows on the other in seconds</span><span class="tag">Shared, 2 people</span></summary>
+  <div class="list"><details class="row" id="grocery"><summary><span class="arrow" aria-hidden="true">&#9656;</span><span class="t">Household: Groceries</span><span class="h">One shared list that syncs across phones in seconds</span><span class="tag">Shared, 2 people</span></summary>
 <div class="inner"><div class="kicker" style="margin-bottom:4px">Powers grocery list · Personal, built with Claude Code</div><section class="proj in-card">
   <div class="cols">
     <div><h3>Problem</h3><p>Two people shopping and planning from one list, on phones where the work network blocks most apps.</p></div>
