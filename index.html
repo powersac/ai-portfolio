@@ -218,7 +218,7 @@ details.row .in-card{padding:16px 0 4px}
 <div class="inner"><div class="kicker" style="margin-bottom:4px">Ops portal · Built with Claude</div><section class="proj in-card">
   <div class="cols">
     <div><h3>Problem</h3><p>A small NGO ran contractor onboarding, invoices, timesheets and grant compliance by hand.</p></div>
-    <div><h3>How AI is used</h3><p>Two small apps on one database, with the logic in the database and a thin automation layer around it. AI is limited to three grounded calls that answer only from retrieved policy and rates, cite their source and send exceptions to a person.</p></div>
+    <div><h3>How AI is used</h3><p>Two small apps on one database, with the logic in the database and a thin automation layer around it. AI is used in only three places. Each one answers only from the client&#x27;s own policy and rates (retrieval-grounded calls), cites its source and sends exceptions to a person.</p></div>
     <div><h3>Result</h3><p>Every record stays readable in the database or as a PDF in Drive even if every app is switched off, and the client owns every account.</p></div>
   </div>
   <p class="repo"><svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-5A1.5 1.5 0 0 1 3.5 7H4Zm1.5 0h5V5a2.5 2.5 0 0 0-5 0v2Z"/></svg><span>No repository shared: the client owns the code and every account.</span></p>
@@ -243,7 +243,7 @@ details.row .in-card{padding:16px 0 4px}
 <div class="inner"><div class="kicker" style="margin-bottom:4px">ops-plugins · Built with Claude</div><section class="proj in-card">
   <div class="cols">
     <div><h3>Problem</h3><p>Sales, fundraising and meeting follow-up were each being rebuilt from scratch.</p></div>
-    <div><h3>How AI is used</h3><p>A Claude Code plugin marketplace. Four MCP servers wrap Pipedrive, Apollo, Fathom and Gmail. Skill plugins compose them: 30 for business development, 20 for fundraising, plus shared, deck and tech-stack plugins.</p></div>
+    <div><h3>How AI is used</h3><p>One shared toolbox the whole company runs on (a Claude Code plugin marketplace). Four connectors link the AI to the CRM, lead data, meeting notes and email (MCP servers wrapping Pipedrive, Apollo, Fathom and Gmail). Reusable playbooks sit on top (skill plugins): 30 for business development, 20 for fundraising, plus shared, deck and tech-stack plugins.</p></div>
     <div><h3>Result</h3><p>A new channel is configuration, not new code. The same setup runs sales, fundraising and the weekly CEO review.</p></div>
   </div>
   <p class="repo"><svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-5A1.5 1.5 0 0 1 3.5 7H4Zm1.5 0h5V5a2.5 2.5 0 0 0-5 0v2Z"/></svg><span>Private repositories: ask me for a walkthrough.</span></p>
@@ -256,7 +256,7 @@ details.row .in-card{padding:16px 0 4px}
 <div class="inner"><div class="kicker" style="margin-bottom:4px">Sales engine · Built with Claude</div><section class="proj in-card">
   <div class="cols">
     <div><h3>Problem</h3><p>Personalization at the level of a CEO&#x27;s top five accounts, for every lead, without a bigger team.</p></div>
-    <div><h3>How AI is used</h3><p>Claude Code is the interface. Plain-English requests source leads from Apollo, enrich them, write the personalization hook, draft the outreach and move each deal through Pipedrive. Subject-line variants are tracked back to the replies they earned.</p></div>
+    <div><h3>How AI is used</h3><p>The operator works in plain English (Claude Code is the interface). Requests source leads from Apollo, enrich them, write the personalization hook, draft the outreach and move each deal through Pipedrive. Subject-line variants are tracked back to the replies they earned.</p></div>
     <div><h3>Result</h3><p>Built to take one operator from about 50 leads a week to 500+ across 10+ channels, with every channel measured in the startup&#x27;s own analytics product.</p></div>
   </div>
   <p class="repo"><svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-5A1.5 1.5 0 0 1 3.5 7H4Zm1.5 0h5V5a2.5 2.5 0 0 0-5 0v2Z"/></svg><span>Private repositories: ask me for a walkthrough.</span></p>
@@ -269,7 +269,7 @@ details.row .in-card{padding:16px 0 4px}
 <div class="inner"><div class="kicker" style="margin-bottom:4px">Raise pipeline · Built with Claude</div><section class="proj in-card">
   <div class="cols">
     <div><h3>Problem</h3><p>A seed round and a weekly operating cadence both need research, warm-intro routing and follow-up faster than one person can do by hand.</p></div>
-    <div><h3>How AI is used</h3><p>Claude researches funds, scores thesis fit, maps the warmest intro path, preps each meeting, tailors the deck and logs every touch in an 11-stage pipeline. Every Tuesday it pulls Linear and Pipedrive, runs a Q&amp;A with the CEO and writes the memo.</p></div>
+    <div><h3>How AI is used</h3><p>Claude researches funds, scores thesis fit, maps the warmest intro path, preps each meeting, tailors the deck and logs every touch in an 11-stage pipeline. Every Tuesday it pulls the task tracker and the CRM (Linear and Pipedrive), runs a Q&amp;A with the CEO and writes the memo.</p></div>
     <div><h3>Result</h3><p>A raise pipeline from raw list to wire, and a three-page weekly memo built from live data instead of recollection.</p></div>
   </div>
   <p class="repo"><svg aria-hidden="true" viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-5A1.5 1.5 0 0 1 3.5 7H4Zm1.5 0h5V5a2.5 2.5 0 0 0-5 0v2Z"/></svg><span>Private repositories: ask me for a walkthrough.</span></p>
@@ -345,7 +345,7 @@ details.row .in-card{padding:16px 0 4px}
 <div class="inner"><div class="kicker" style="margin-bottom:4px">Powers grocery list · Built with Claude</div><section class="proj in-card">
   <div class="cols">
     <div><h3>Problem</h3><p>Two people shopping and planning from one list, on phones where the work network blocks most apps.</p></div>
-    <div><h3>How AI is used</h3><p>Built end to end with Claude: one Cloudflare Worker serves the page and a small API over a single store. Each person&#x27;s link is their credential. An early-morning job fills the next ten days of dinners from a rotation.</p></div>
+    <div><h3>How AI is used</h3><p>Built end to end with Claude: one small cloud service serves the page and the data (a Cloudflare Worker with a small API over a single key-value store). Each person&#x27;s private link is their login (a token in the URL). An early-morning job fills the next ten days of dinners from a rotation.</p></div>
     <div><h3>Result</h3><p>A tick on one phone shows on the other within fifteen seconds. No account and no app store.</p></div>
   </div>
   <p class="repo"><span>Public repository:</span> <a href="https://github.com/powersac/powers-grocery#readme" target="_blank" rel="noopener">powersac/powers-grocery &#8599;</a></p>
@@ -356,7 +356,7 @@ details.row .in-card{padding:16px 0 4px}
 <div class="inner"><div class="kicker" style="margin-bottom:4px">Kids checklist · Built with Claude</div><section class="proj in-card">
   <div class="cols">
     <div><h3>Problem</h3><p>A paper chart cannot tell two kids and two parents who did what, or what is owed.</p></div>
-    <div><h3>How AI is used</h3><p>Built with Claude as an installable React app on a Cloudflare Worker. Each child&#x27;s link only lets them check off their own tasks, and parents edit tasks, rates and payouts. Each save checks a version number, so a phone with stale data retries instead of overwriting.</p></div>
+    <div><h3>How AI is used</h3><p>Built with Claude as a phone app you install from a link (an installable React app on a Cloudflare Worker). Each child&#x27;s link only lets them check off their own tasks, and parents edit tasks, rates and payouts. Each save checks a version number, so a phone with stale data retries instead of overwriting (a revision check on every write).</p></div>
     <div><h3>Result</h3><p>Every phone shows the same state, with a weekly earnings summary for the parents.</p></div>
   </div>
   <p class="repo"><span>Public repository:</span> <a href="https://github.com/powersac/Powers-Kids-Checklist#readme" target="_blank" rel="noopener">powersac/Powers-Kids-Checklist &#8599;</a></p>
